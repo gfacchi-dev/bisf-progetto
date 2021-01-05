@@ -1,0 +1,32 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Data Summary}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Settore OIL and GAS}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Settore FINANCE}{4}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Settore BIO and TECH}{5}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Descriptive Analytics}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Analisi dei Ritorni}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Granularità Giornaliera}{8}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Granularità Settimanale}{9}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Granularità Mensile}{10}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Analisi dei settori tramite confronto CCR Mensili}{11}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Settore OIL and GAS}{11}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Settore FINANCE}{12}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Settore BIO and TECH}{13}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Analisi di Correlazione}{14}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Granularità Giornaliera}{14}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Granularità Mensile}{15}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Statistiche Aggregate}{16}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Analisi Aggregata tramite Boxplots}{17}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}QQ Plots}{19}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Analisi diagnostiche sui singoli titoli}{20}{subsection.2.7}%
+\contentsline {subsubsection}{\numberline {2.7.1}TEN.MI}{20}{subsubsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.2}ENI.MI}{21}{subsubsection.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.7.3}EXO.MI}{22}{subsubsection.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.7.4}AZM.MI}{23}{subsubsection.2.7.4}%
+\contentsline {subsubsection}{\numberline {2.7.5}REC.MI}{24}{subsubsection.2.7.5}%
+\contentsline {subsubsection}{\numberline {2.7.6}DIA.MI}{25}{subsubsection.2.7.6}%
+\contentsline {section}{\numberline {3}Predictive Analytics}{26}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Beta}{26}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Portfolio Management}{28}{section.4}%
+\contentsline {section}{\numberline {5}Web App}{29}{section.5}%

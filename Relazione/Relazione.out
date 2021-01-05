@@ -1,0 +1,30 @@
+\BOOKMARK [1][-]{section.1}{Data Summary}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Settore OIL and GAS}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Settore FINANCE}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Settore BIO and TECH}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Descriptive Analytics}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Analisi dei Ritorni}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Granularit\340 Giornaliera}{subsection.2.1}% 7
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Granularit\340 Settimanale}{subsection.2.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Granularit\340 Mensile}{subsection.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.2}{Analisi dei settori tramite confronto CCR Mensili}{section.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Settore OIL and GAS}{subsection.2.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Settore FINANCE}{subsection.2.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Settore BIO and TECH}{subsection.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.3}{Analisi di Correlazione}{section.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Granularit\340 Giornaliera}{subsection.2.3}% 15
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Granularit\340 Mensile}{subsection.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.4}{Statistiche Aggregate}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.5}{Analisi Aggregata tramite Boxplots}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.6}{QQ Plots}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.7}{Analisi diagnostiche sui singoli titoli}{section.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.7.1}{TEN.MI}{subsection.2.7}% 21
+\BOOKMARK [3][-]{subsubsection.2.7.2}{ENI.MI}{subsection.2.7}% 22
+\BOOKMARK [3][-]{subsubsection.2.7.3}{EXO.MI}{subsection.2.7}% 23
+\BOOKMARK [3][-]{subsubsection.2.7.4}{AZM.MI}{subsection.2.7}% 24
+\BOOKMARK [3][-]{subsubsection.2.7.5}{REC.MI}{subsection.2.7}% 25
+\BOOKMARK [3][-]{subsubsection.2.7.6}{DIA.MI}{subsection.2.7}% 26
+\BOOKMARK [1][-]{section.3}{Predictive Analytics}{}% 27
+\BOOKMARK [2][-]{subsection.3.1}{Beta}{section.3}% 28
+\BOOKMARK [1][-]{section.4}{Portfolio Management}{}% 29
+\BOOKMARK [1][-]{section.5}{Web App}{}% 30
