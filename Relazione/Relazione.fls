@@ -1,9 +1,9 @@
-PWD c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione
+PWD c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione
 INPUT c:/texlive/2020/texmf.cnf
 INPUT c:/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.tex
-OUTPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.log
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.tex
+OUTPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.log
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/size12.clo
@@ -92,9 +92,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.aux
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.aux
-OUTPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.aux
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.aux
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.aux
+OUTPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.aux
 INPUT c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -107,14 +107,14 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
-OUTPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.pdf
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
-OUTPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
+OUTPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.pdf
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
+OUTPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -124,8 +124,8 @@ INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.toc
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.toc
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.toc
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.toc
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
@@ -138,94 +138,151 @@ INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-OUTPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.toc
+OUTPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.toc
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/eni_ten_news.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/eni_ten_news.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/eni_ten_news.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/exor.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/exor.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/exor.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/dia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/dia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/dia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/riepilogo.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/riepilogo.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/riepilogo.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/allgraphs.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/allgraphs.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/allgraphs.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/ccrdaily.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/ccrdaily.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/ccrdaily.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/ccrweekly.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/ccrweekly.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/ccrweekly.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/CCRm.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/CCRm.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/CCRm.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setOil.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setOil.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setOil.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setFin.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setFin.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setFin.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setBio.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setBio.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/setBio.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/corrdaily.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/corrdaily.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/corrdaily.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/corr_mont.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/corr_mont.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/corr_mont.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/stats.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/stats.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/stats.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/eni_ten_news.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/eni_ten_news.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/eni_ten_news.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/exor.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/exor.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/exor.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/dia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/dia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/dia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/riepilogo.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/riepilogo.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/riepilogo.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/allgraphs.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/allgraphs.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/allgraphs.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/ccrdaily.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/ccrdaily.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/ccrdaily.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/ccrweekly.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/ccrweekly.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/ccrweekly.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/CCRm.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/CCRm.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/CCRm.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setOil.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setOil.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setOil.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setFin.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setFin.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setFin.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setBio.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setBio.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/setBio.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/corrdaily.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/corrdaily.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/corrdaily.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/corr_mont.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/corr_mont.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/corr_mont.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/stats.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/stats.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/stats.png
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/volMedia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/volMedia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/volMedia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/boxplots.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/boxplots.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/boxplots.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/qq.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/qq.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/qq.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_ten.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_ten.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_ten.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_eni.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_eni.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_eni.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_exo.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_exo.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_exo.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_azm.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_azm.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_azm.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_rec.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_rec.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_rec.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_dia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_dia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/diag_dia.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/beta20182020.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/beta20182020.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/beta20182020.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/beta.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/beta.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/beta.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/betaTenMIfinestratotale.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/betaTenMIfinestratotale.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/betaTenMIfinestratotale.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/WEBAPP.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/WEBAPP.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/immagini/WEBAPP.png
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.aux
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
-INPUT c:/Users/giuse/Desktop/Progetto BI/Progetto/Relazione/Relazione.out
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/volMedia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/volMedia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/volMedia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/boxplots.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/boxplots.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/boxplots.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/qq.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/qq.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/qq.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_ten.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_ten.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_ten.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_eni.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_eni.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_eni.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_exo.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_exo.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_exo.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_azm.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_azm.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_azm.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_rec.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_rec.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_rec.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_dia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_dia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/diag_dia.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/rmse.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/rmse.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/rmse.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiforecast.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiforecast.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiforecast.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiL.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiL.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiL.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/predvsreal.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/predvsreal.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/predvsreal.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiplotrp.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiplotrp.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/tenmiplotrp.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreENI.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreENI.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreENI.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreENIbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreENIbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreENIbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreEXO.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreEXO.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreEXO.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreEXObar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreEXObar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreEXObar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreAZM.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreAZM.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreAZM.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreAZMbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreAZMbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreAZMbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreREC.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreREC.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreREC.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreRECbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreRECbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreRECbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreDIA.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreDIA.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreDIA.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreDIAbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreDIAbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/foreDIAbar.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/beta20182020.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/beta20182020.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/beta20182020.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/beta.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/beta.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/beta.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/betaTenMIfinestratotale.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/betaTenMIfinestratotale.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/betaTenMIfinestratotale.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/weights.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/weights.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/weights.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/frontiera.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/frontiera.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/frontiera.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/invres.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/invres.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/invres.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/confr.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/confr.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/confr.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/WEBAPP.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/WEBAPP.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/immagini/WEBAPP.png
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.aux
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
+INPUT c:/Users/giuse/Desktop/dev/unimib/bisf-progetto/Relazione/Relazione.out
 INPUT c:/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb

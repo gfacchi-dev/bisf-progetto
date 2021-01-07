@@ -244,6 +244,119 @@ Passando al settore Biotech il range di distibuzione dei ritorni si amplia maggi
 Il titolo di DiaSorin presenta le stesse caratteristiche del titolo di Recordati, tranne che per una differenza sostanziale riguardo il ritorno massimo che, in questo caso, risulta molto più rilevante per la notizia riportata nell'introduzione. La mediana è postiva e si attesta intorno al $5\%$, presentando un ritorno massimo che si discosta più di quanto si discosti il ritorno minimo.
 \newpage
 \section{Predictive Analytics}
+\subsection{Predizione tramite ARIMA}
+Mediante l'utilizzo di un modello autoregressivo integrato a media mobile (ARIMA) è possibile fare una previsione sull'andamento dei CCR degli stocks sulla base dei CCR già in possesso. Per raggiungere questo obiettivo è necessario ampliare il dataset in analisi includendo i valori dei CCR antecedenti alla data iniziale di riferimento (dal 2007). Il processo di forecasting in questione prende in analisi, per quanto riguarda questa soluzione, 80 mesi di training set (da ottobre 2010 a maggio 2017), 30 di test (giugno 2017 a dicembre 2019) e 10 (da gennaio 2020 a ottobre 2020, data di termine analisi) di vero e proprio forecasting. Sulla base dei CCR di training l'approccio utilizzato del forecasting prevede l'utlizzo dei modelli ARMA, dopo il confronto con i CCR di test, con minor RMSE per ogni stock e il vero e proprio forecasting usando i modelli precedentemente computati sui CCR concatenati di training e test. La prima fase consiste nel calcolare i modelli ARMA con RMSE minimo per ogni stock. Per questa analisi sono stati considerati i parametri come segue:
+\begin{itemize}
+    \item $0\leq AR \leq 10$
+    \item $I=0$
+    \item $0\leq MA \leq 10$
+\end{itemize}
+Da cui sono stati ricavate le seguenti migliori configurazioni:
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/rmse.png}
+    \caption{Migliori configurazioni ARIMA per gli stock in analisi}
+\end{figure}
+\FloatBarrier
+\subsubsection{TEN.MI}
+La previsione ARIMA, per quanto riguarda TEN.MI, ha dato il seguente risultato per $n$ mesi (30)
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\textwidth]{immagini/tenmiforecast.png}
+    \caption{Plot del forecast di $m$ mesi per TEN.MI che ha dato RMSE minore tra CCR predetti e di test}
+\end{figure}
+\FloatBarrier
+Utilizzando questo modello è stato poi eseguito il forecast vero e proprio sugli $l$ mesi successivi (10), producendo questo risultato:
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\textwidth]{immagini/tenmiL.png}
+    \caption{Plot del forecast di $l$ mesi per TEN.MI utilizzando il modello ARIMA con migliore RMSE tra dati di test e predetti}
+\end{figure}
+Un'ulteriore analisi sull'efficacia del forecast è quindi condotta confrontando i valori di CCR reali degli $l$ mesi con quelli predetti da ARIMA
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.3\textwidth]{immagini/predvsreal.png}
+    \caption{Confronto tra i valori di CCR prodotti da ARIMA per gli $l$ mesi e i CCR reali}
+\end{figure}
+\FloatBarrier
+Calcolando anche i ritorni cumulati sui 10 mesi è possibile fare un confronto dei ritorni aggregati.
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/tenmiplotrp.png}
+    \caption{Confronto tra i ritorni cumulati predetti da ARIMA per gli $l$ mesi e i CCR cumulati reali}
+\end{figure}
+\FloatBarrier
+Com'è possibile notare dal grafico, si è formata una cospicua discrepanza tra valori reali e valori predetti. Questa situazione è sicuramente causata dagli avvenimenti del 2020, che hanno influito molto sulla stagionalità dei ritorni e quindi hanno contribuito a creare un modello di predizione non efficace. Questo è possibile notarlo anche per la maggior parte degli altri stocks.
+\newpage
+\subsubsection{ENI.MI}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreENI.png}
+    \caption{Confronto tra i valori di CCR prodotti da ARIMA per gli $l$ mesi e i CCR reali}
+\end{figure}
+\FloatBarrier
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreENIbar.png}
+    \caption{Confronto tra i ritorni cumulati predetti da ARIMA per gli $l$ mesi e i CCR cumulati reali}
+\end{figure}
+\FloatBarrier
+Le stesse considerazioni fatte per TEN.MI possono essere riprese per ENI.MI
+\subsubsection{EXO.MI}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreEXO.png}
+    \caption{Confronto tra i valori di CCR prodotti da ARIMA per gli $l$ mesi e i CCR reali}
+\end{figure}
+\FloatBarrier
+Per quanto riguarda EXO.MI il modello ARIMA con RMSE minimo offre un forecast molto approssimativo, questo è dovuto soprattutto alla presenza di outliers nei CCR mensili del titolo.
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreEXObar.png}
+    \caption{Confronto tra i ritorni cumulati predetti da ARIMA per gli $l$ mesi e i CCR cumulati reali}
+\end{figure}
+\FloatBarrier
+\subsubsection{AZM.MI}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreAZM.png}
+    \caption{Confronto tra i valori di CCR prodotti da ARIMA per gli $l$ mesi e i CCR reali}
+\end{figure}
+\FloatBarrier
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreAZMbar.png}
+    \caption{Confronto tra i ritorni cumulati predetti da ARIMA per gli $l$ mesi e i CCR cumulati reali}
+\end{figure}
+\FloatBarrier
+\subsubsection{REC.MI}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreREC.png}
+    \caption{Confronto tra i valori di CCR prodotti da ARIMA per gli $l$ mesi e i CCR reali}
+\end{figure}
+\FloatBarrier
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreRECbar.png}
+    \caption{Confronto tra i ritorni cumulati predetti da ARIMA per gli $l$ mesi e i CCR cumulati reali}
+\end{figure}
+\FloatBarrier
+Per il settore farmaceutico è possibile notare come i ritorni previsti non si discostino molto dai ritorni reali. Questo perché il settore non ha risentito della crisi COVID nel 2020.
+\newpage
+\subsubsection{DIA.MI}
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreDIA.png}
+    \caption{Confronto tra i valori di CCR prodotti da ARIMA per gli $l$ mesi e i CCR reali}
+\end{figure}
+\FloatBarrier
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/foreDIAbar.png}
+    \caption{Confronto tra i ritorni cumulati predetti da ARIMA per gli $l$ mesi e i CCR cumulati reali}
+\end{figure}
+\FloatBarrier
 \subsection{Beta}
 Utile ai fini di analisi è la computazione del parametro Beta. Per il relativo calcolo è necessario conoscere i CCR dell'indice di mercato di riferimento (FTSE.MIB) per la finsetra temporale considerata per gli stocks. È possibile quindi calcolare Beta per l'intera finestra temporale, ottenendo i seguenti risultati:
 \begin{figure}[!htb]
@@ -278,6 +391,48 @@ Facendo riferimento alla figura 25, è possibile analizzare gli stocks secondo i
 
 \newpage
 \section{Portfolio Management}
+\subsection{Portfolio Optimization}
+La data di costituzione del portfolio fa riferimento all'inizio degli $l$ mesi presi in considerazione per il forecasting. La strategia di portfolio optimization segue il modello di Markowitz e prevede quindi una suddivisione dei pesi dei titoli secondo questo schema, calcolato utilizzando gli adjusted close prices degli stocks dall'inizio disponibilità:
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\textwidth]{immagini/weights.png}
+    \caption{Ripartizione dei pesi del portfolio secondo Markowitz alla data di costituzione}
+\end{figure}
+\FloatBarrier
+Di seguito anche la costituzione della frontiera di efficienza, e il posizionamento del Market Portfolio. Dall'analisi del MP si evince che il suo ritorno atteso si aggira intorno al $15\%$.
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\textwidth]{immagini/frontiera.png}
+    \caption{Frontiera efficiente con MP secondo Markowitz}
+\end{figure}
+\FloatBarrier
+
+\subsection{Strategia di investimento}
+Come strategia di investimento, in questa analisi, è prevista una buy-and-hold dalla costituzione del portfolio fino alla fine della finestra temporale in analisi. Come budget è stata considerata una quota di 5000€ e dei costi di transazione al $3\%$.
+In base al precedente calcolo dei pesi ottimali per l'investimento è possibile computare il numero di shares per stock e la relativa spesa. Qui di seguito viene riportato il loro calcolo (con applicati i relativi costi di transazione):
+\begin{itemize}
+    \item \textbf{TEN.MI}: 0 quote a 9.044246 € cad. $\Rightarrow 0$ €
+    \item \textbf{ENI.MI}: 149 quote a 12.96299 € cad. $\Rightarrow 1989.43$ €
+    \item \textbf{EXO.MI}: 0 quote a 69.11371 € cad. $\Rightarrow 0$ €
+    \item \textbf{AZM.MI}: 0 quote a 21.06253 € cad. $\Rightarrow 0$ €
+    \item \textbf{REC.MI}: 37 quote a 35.96073 € cad. $\Rightarrow 1370.46$ €
+    \item \textbf{DIA.MI}: 12 quote a 121.4059 € cad. $\Rightarrow 1500.57$ €
+\end{itemize}
+Da questi dati è possibile estrapolare sia spesa che residuo (quota non utilizzata per l'investimento) relativi all'investimento
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\textwidth]{immagini/invres.png}
+    \caption{Investimento totale e residuo non utilizzato (€)}
+\end{figure}
+\FloatBarrier
+Il valore del portfolio alla fine del periodo risulta però essere minore a quello iniziale ed è pari a $4690.81$ €, con una differenza di $169,66$ €. Questo succede perché all'atto di costituzione del portfolio (l'inizio degli $l$ mesi) la combinazione ottimale per il portfolio è data dai dati fino a quel momento storico, non sapendo degli effetti causati dalla pandemia. Il relativo ritorno reale corrisponde allo $-2.65\%$. Utile ai fini di analisi è il confronto tra ritorno atteso cumulato del Portfolio Optimized, il ritorno previsto mediante ARIMA cumulato usando come pesi quelli dati dalla portfolio optimization e i ritorni reali veri e propri, per poterne poi estrarre delle considerazioni.
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=1\textwidth]{immagini/confr.png}
+    \caption{Confronto tra ritorno atteso cumulato del Portfolio Optimized, ritorno previsto mediante ARIMA cumulato usando come pesi quelli dati dalla portfolio optimization e i ritorni reali}
+\end{figure}
+\FloatBarrier
+Come si evince dal grafico a barre, c'è una marcata discrepanza tra i ritorni attesi e quello reale. Questo perché, come già considerato nel corso dell'analisi, il mercato nel periodo relativo al 2020 ha avuto comportamenti imprevedibili e fluttuazioni che non hanno seguito la stagionalità dei titoli.
 \newpage
 \section{Web App}
 Mediante l'utilizzo della libreria shiny è possibile creare applicazioni web interattive. La parte interessata dalla web application sviluppata riguarda la descriptive analytics, con la possibilità di visualizzare interattivamente sia la heatmap di correlazione dei vari stock che i CCR dei vari settori con la relativa possibilità di selezionarne la finestra temporale.

@@ -441,7 +441,7 @@ rmseColl <- as.data.frame(rmseColl)
 colnames(rmseColl) <- c("Stock", "RMSE", "ar", "i", "ma")
 rmseColl$RMSE <-as.numeric(as.character(rmseColl$RMSE))
 
-# Dataset di analisi di output
+# Dataset di analisi di output con i relativi parametri ARMA da utilizzare per la previsione negli L mesi
 minErrorModel <- c()
 
 TEN.MI.Models <- rmseColl[rmseColl$Stock == "TEN.MI",]
@@ -491,43 +491,92 @@ predictL <- function(stockName, stock, n, m, l, ar, i, ma) {
   lines(lower, col='green')
   lines(upper, col='green')
   lines(predictions$pred,col='red')
+  grid()
   return(predictions$pred)
 }
 
+# Funzione per il calcolo "manuale" dell'RMSE (deviazione standard degli scarti)
 RMSE = function(m, o){
   sqrt(mean((m - o)^2))
 }
 
+plotReturns <- function(predicted, real){
+  print(paste("Ritorno Previsto:", predicted, "%"))
+  print(paste("Ritorno Reale:", real, "%"))
+  barplot(c(predicted, real), ylim = c(-0.6,0.5), col=c("orange", "green"))
+  abline(h=0.0, lty=2, lwd=2, col="red")
+  grid()
+  legend("topleft",
+         c("Ritorno Previsto","Ritorno Reale"),
+         fill = c("orange", "green")
+  )
+  print(paste("RMSE:", RMSE(predicted[,1], real[,1])))
+}
+values <- data.frame()
+# Per ogni stock confronto i valori di previsione e quelli reali, determinandone l'RMSE
 row <- minErrorModel[minErrorModel$Stock == "TEN.MI",]
 TEN.MI.predR <- as.xts(predictL(row$Stock, TEN.MI.All, n, m, l,row$ar, row$i, row$ma))
+TEN.MI.predR[,1] <- round(TEN.MI.predR[,1], 2)
 real <- window(TEN.MI.CCReturnMonthly, start = as.Date(index(TEN.MI.predR)[1]))
-print(paste("RMSE:", RMSE(TEN.MI.predR[,1], real[,1])))
+values <- cbind(TEN.MI.predR[,1], real[,1])
+colnames(values) <- c("Predetti", "Reali")
+print(values)
+TEN.MI.rP <- Return.cumulative(values$Predetti)
+TEN.MI.rR <- Return.cumulative(values$Reali)
+plotReturns(TEN.MI.rP, TEN.MI.rR)
 
 
 row <- minErrorModel[minErrorModel$Stock == "ENI.MI",]
 ENI.MI.predR <- as.xts(predictL(row$Stock, ENI.MI.All, n, m, l,row$ar, row$i, row$ma))
-real <- window(TEN.MI.CCReturnMonthly, start = as.Date(index(ENI.MI.predR)[1]))
-print(paste("RMSE:", RMSE(ENI.MI.predR[,1], real[,1])))
+ENI.MI.predR[,1] <- round(ENI.MI.predR[,1], 2)
+real <- window(ENI.MI.CCReturnMonthly, start = as.Date(index(ENI.MI.predR)[1]))
+values <- cbind(ENI.MI.predR[,1], real[,1])
+colnames(values) <- c("Predetti", "Reali")
+print(values)
+ENI.MI.rP <- Return.cumulative(values$Predetti)
+ENI.MI.rR <- Return.cumulative(values$Reali)
+plotReturns(ENI.MI.rP, ENI.MI.rR)
 
 row <- minErrorModel[minErrorModel$Stock == "EXO.MI",]
 EXO.MI.predR <- as.xts(predictL(row$Stock, EXO.MI.All, n, m, l,row$ar, row$i, row$ma))
-real <- window(TEN.MI.CCReturnMonthly, start = as.Date(index(EXO.MI.predR)[1]))
-print(paste("RMSE:", RMSE(EXO.MI.predR[,1], real[,1])))
+EXO.MI.predR[,1] <- round(EXO.MI.predR[,1], 2)
+real <- window(EXO.MI.CCReturnMonthly, start = as.Date(index(EXO.MI.predR)[1]))
+values <- cbind(EXO.MI.predR[,1], real[,1])
+colnames(values) <- c("Predetti", "Reali")
+print(values)
+EXO.MI.rP <- Return.cumulative(values$Predetti)
+EXO.MI.rR <- Return.cumulative(values$Reali)
+plotReturns(EXO.MI.rP, EXO.MI.rR)
 
 row <- minErrorModel[minErrorModel$Stock == "AZM.MI",]
 AZM.MI.predR <- as.xts(predictL(row$Stock, AZM.MI.All, n, m, l,row$ar, row$i, row$ma))
-real <- window(TEN.MI.CCReturnMonthly, start = as.Date(index(AZM.MI.predR)[1]))
-print(paste("RMSE:", RMSE(AZM.MI.predR[,1], real[,1])))
+real <- window(AZM.MI.CCReturnMonthly, start = as.Date(index(AZM.MI.predR)[1]))
+values <- cbind(AZM.MI.predR[,1], real[,1])
+colnames(values) <- c("Predetti", "Reali")
+print(values)
+AZM.MI.rP <- Return.cumulative(values$Predetti)
+AZM.MI.rR <- Return.cumulative(values$Reali)
+plotReturns(AZM.MI.rP, AZM.MI.rR)
 
 row <- minErrorModel[minErrorModel$Stock == "REC.MI",]
 REC.MI.predR <- as.xts(predictL(row$Stock, REC.MI.All, n, m, l,row$ar, row$i, row$ma))
-real <- window(TEN.MI.CCReturnMonthly, start = as.Date(index(REC.MI.predR)[1]))
-print(paste("RMSE:", RMSE(REC.MI.predR[,1], real[,1])))
+real <- window(REC.MI.CCReturnMonthly, start = as.Date(index(REC.MI.predR)[1]))
+values <- cbind(REC.MI.predR[,1], real[,1])
+colnames(values) <- c("Predetti", "Reali")
+print(values)
+REC.MI.rP <- Return.cumulative(values$Predetti)
+REC.MI.rR <- Return.cumulative(values$Reali)
+plotReturns(REC.MI.rP, REC.MI.rR)
 
 row <- minErrorModel[minErrorModel$Stock == "DIA.MI",]
 DIA.MI.predR <- as.xts(predictL(row$Stock, DIA.MI.All, n, m, l,row$ar, row$i, row$ma))
-real <- window(TEN.MI.CCReturnMonthly, start = as.Date(index(DIA.MI.predR)[1]))
-print(paste("RMSE:", RMSE(DIA.MI.predR[,1], real[,1])))
+real <- window(DIA.MI.CCReturnMonthly, start = as.Date(index(DIA.MI.predR)[1]))
+values <- cbind(DIA.MI.predR[,1], real[,1])
+colnames(values) <- c("Predetti", "Reali")
+print(values)
+DIA.MI.rP <- Return.cumulative(values$Predetti)
+DIA.MI.rR <- Return.cumulative(values$Reali)
+plotReturns(DIA.MI.rP, DIA.MI.rR)
 #----------------------------------BETA----------------------------------
 
 # Funzione per il calcolo dinamico di beta
@@ -744,10 +793,11 @@ cat("\nValore del Markowitz optimal portfolio alla fine del periodo:",Mop.value,
 
 # Ritorno del portfolio alla end date
 Mop.ret <- Mop$pw[1]*(TEN.MI.p1/TEN.MI.p0-1) + Mop$pw[2]*(ENI.MI.p1/ENI.MI.p0-1) + Mop$pw[3]*(EXO.MI.p1/EXO.MI.p0-1) + Mop$pw[4]*(AZM.MI.p1/AZM.MI.p0-1) + Mop$pw[5]*(REC.MI.p1/REC.MI.p0-1) + Mop$pw[6]*(DIA.MI.p1/DIA.MI.p0-1)
+Mop.forecastRet <- Mop$pw[1]*TEN.MI.rP[1,1] + Mop$pw[2]*ENI.MI.rP[1,1] + Mop$pw[3]*EXO.MI.rP[1,1] + Mop$pw[4]*AZM.MI.rP[1,1] +Mop$pw[5]*REC.MI.rP[1,1] +Mop$pw[6]*DIA.MI.rP[1,1]
 cat("Ritorno atteso del Mop:",Mop$pm,"[",round(100*Mop$pm,2),"% ]\n")
 cat("Ritorno effettivo del Mop:",Mop.ret,"[",round(100*Mop.ret,2),"% ]")
-
+cat("Ritorno forecast con pesi del Mop:", Mop.forecastRet,"[",round(100*Mop.forecastRet,2),"% ]" )
 # Confronto grafico dei ritorni
-pairret <- cbind(round(100*Mop$pm,2),round(100*Mop.ret,2))
-colnames(pairret) <- c("Ritorno Atteso", "Ritorno Effettivo")
-barplot(pairret, main="Ritorni del portfolio (atteso e effettivo) a confronto", ylab = "Ritorno (%)")
+pairret <- cbind(round(100*Mop$pm,2),round(100*Mop.ret,2),round(100*Mop.forecastRet,2))
+colnames(pairret) <- c("Ritorno Atteso", "Ritorno Effettivo", "Ritorno forecasted")
+barplot(pairret, main="Ritorni del portfolio (atteso, effettivo e forecast) a confronto", ylab = "Ritorno (%)")
