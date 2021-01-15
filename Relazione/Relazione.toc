@@ -39,3 +39,4 @@
 \contentsline {subsection}{\numberline {4.1}Portfolio Optimization}{39}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Strategia di investimento}{40}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Web App}{43}{section.5}%
+\contentsline {section}{\numberline {6}Conclusioni}{44}{section.6}%

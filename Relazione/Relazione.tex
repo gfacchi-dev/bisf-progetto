@@ -432,7 +432,12 @@ Il valore del portfolio alla fine del periodo risulta però essere minore a quel
     \caption{Confronto tra ritorno atteso cumulato del Portfolio Optimized, ritorno previsto mediante ARIMA cumulato usando come pesi quelli dati dalla portfolio optimization e i ritorni reali}
 \end{figure}
 \FloatBarrier
-Come si evince dal grafico a barre, c'è una marcata discrepanza tra i ritorni attesi e quello reale. Questo perché, come già considerato nel corso dell'analisi, il mercato nel periodo relativo al 2020 ha avuto comportamenti imprevedibili e fluttuazioni che non hanno seguito la stagionalità dei titoli.
+Come si evince dal grafico a barre, c'è una marcata discrepanza tra i ritorni attesi e quello reale. Questo perché, come già considerato nel corso dell'analisi, il mercato nel periodo relativo al 2020 ha avuto comportamenti imprevedibili e fluttuazioni che non hanno seguito la stagionalità dei titoli. In dettaglio i ritorni sono:
+\begin{itemize}
+    \item Ritorno Atteso del Mop: $14.19\%$
+    \item Ritorno Effettivo del Mop: $-2.65\%$
+    \item Ritorno Forecasted con i pesi del Mop: $8.19\%$
+\end{itemize}
 \newpage
 \section{Web App}
 Mediante l'utilizzo della libreria shiny è possibile creare applicazioni web interattive. La parte interessata dalla web application sviluppata riguarda la descriptive analytics, con la possibilità di visualizzare interattivamente sia la heatmap di correlazione dei vari stock che i CCR dei vari settori con la relativa possibilità di selezionarne la finestra temporale.
@@ -442,4 +447,7 @@ Mediante l'utilizzo della libreria shiny è possibile creare applicazioni web in
     \caption{Screenshot Web App Shiny}
 \end{figure}
 \FloatBarrier
+\newpage
+\section{Conclusioni}
+Da una prima analisi dei dati è emerso come l'andamento dei titoli azionari sia altamente suscettibile alle notizie di mercato. Analizzando gli stocks per settore si nota come l'andamento dei titoli dello stesso settore sia strettamente correlato, in alcuni casi anche in un rapporto di subordinazione, subendo fluttuazioni molto più importanti. In una panoramica generale è comunque emerso come l'andamento dei titoli segua l'andamento dell'indice di mercato. Questo si nota per lo più dall'analisi dei ritorni nel periodo di crisi, dove (ad eccezione del settore biotech) tutti i titoli azionari hanno subito forti perdite. È possibile poi notare come la presenza di outliers sia molto lieve nella finestra temporale in analisi. Anche considerando il periodo di crisi, infatti, non si registrano grossi discostamenti dalle distribuzioni dei CCR. Per quanto riguarda le previsioni dei CCR dei titoli nella finestra temporale dei 10 mesi, non sono stati ottenuti risultati che rispecchiassero fedelemente la realtà, ad eccezione del settore biotech. Questo è sempre dovuto al tonfo dei mercati azionari nel periodo di crisi che hanno compromesso la stagionalità dei rispettivi ritorni. La strategia d'investimento prevista (buy-and-hold) non è risultata efficace per lo stesso motivo. Infatti, anche selezionando i titoli e i relativi pesi migliori per la composizione del portfolio, i ritorni attesi si discostano di molto da quelli reali. Il periodo della pandemia ha compromesso quindi, oltre che i mercati, le previsioni dei CCR mensili nel periodo in analisi. Anche il miglior strumento di previsione non può prevedere cigni neri (eventi rarissimi/imprevedibili), occorre quindi cautela nell'operare nei mercati finanziari, considerando il rischio un fattore determinante nella scelta di strategie.
 \end{document}

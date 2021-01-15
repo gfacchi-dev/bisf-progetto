@@ -463,7 +463,7 @@ DIA.MI.Models <- rmseColl[rmseColl$Stock == "DIA.MI",]
 minErrorModel <- rbind(minErrorModel, DIA.MI.Models[which.min(DIA.MI.Models$RMSE),])
 
 # RMSE minimi per stock
-print(minErrorModel)
+print(kable(minErrorModel))
 
 par(mfrow = c(1, 1))
 predictL <- function(stockName, stock, n, m, l, ar, i, ma) {
@@ -733,7 +733,6 @@ points(Mop$ps, Mop$pm, pch=17, col="red")
 
 # Budget
 budget <- 5000 #V
-
 trans_perc = 0.03
 
 # Computo il numero di shares in base al peso trovato dalla configurazione ottimale del portfolio
@@ -753,7 +752,7 @@ spesa.AZM.MI <- AZM.MI.shares * (as.numeric(AZM.MI.All[yesterday])+(as.numeric(A
 spesa.REC.MI <- REC.MI.shares * (as.numeric(REC.MI.All[yesterday])+(as.numeric(REC.MI.All[yesterday])*trans_perc))
 spesa.DIA.MI <- DIA.MI.shares * (as.numeric(DIA.MI.All[yesterday])+(as.numeric(DIA.MI.All[yesterday])*trans_perc))
 
-# Composizione del portfolio alla data di costituzione
+# Composizione del portfolio alla data di costituzione (shares e spesa)
 cat("Composizione del Markowitz optimal portfolio:\n")
 cat(" - TEN:",TEN.MI.shares,"quote a",as.numeric(TEN.MI.All[yesterday]),"EUR cad. -->", spesa.TEN.MI,"EUR\n")
 cat(" - ENI:",ENI.MI.shares,"quote a",as.numeric(ENI.MI.All[yesterday]),"EUR cad. -->", spesa.ENI.MI,"EUR\n")
@@ -768,7 +767,8 @@ cat("\nInvestimento totale per il Markowitz optimal portfolio:",investimento,"EU
 # Differenza tra budget e investimento
 cat("Residuo:",budget-investimento,"EUR\n")
 
-pie(c(investimento, (budget-investimento)), labels=c("Investimento", "Residuo"), col = rainbow(2))
+# Ripartizione Investimento-Residuo mostrata su grafico a torta
+pie(c(investimento, (budget-investimento)), labels=c(round(investimento, 2), round((budget-investimento), 2)), col = rainbow(2), main = "Investimento totale e residuo non utilizzato")
 legend("topright", c("Investimento", "Residuo"), cex = 0.8,fill = rainbow(2))
 
 # Prezzi degli stocks alla data finale (1 ottobre 2020)
@@ -792,12 +792,17 @@ Mop.value <- TEN.MI.shares*TEN.MI.p1 + ENI.MI.shares*ENI.MI.p1 + EXO.MI.shares*E
 cat("\nValore del Markowitz optimal portfolio alla fine del periodo:",Mop.value,"EUR\n")
 
 # Ritorno del portfolio alla end date
-Mop.ret <- Mop$pw[1]*(TEN.MI.p1/TEN.MI.p0-1) + Mop$pw[2]*(ENI.MI.p1/ENI.MI.p0-1) + Mop$pw[3]*(EXO.MI.p1/EXO.MI.p0-1) + Mop$pw[4]*(AZM.MI.p1/AZM.MI.p0-1) + Mop$pw[5]*(REC.MI.p1/REC.MI.p0-1) + Mop$pw[6]*(DIA.MI.p1/DIA.MI.p0-1)
-Mop.forecastRet <- Mop$pw[1]*TEN.MI.rP[1,1] + Mop$pw[2]*ENI.MI.rP[1,1] + Mop$pw[3]*EXO.MI.rP[1,1] + Mop$pw[4]*AZM.MI.rP[1,1] +Mop$pw[5]*REC.MI.rP[1,1] +Mop$pw[6]*DIA.MI.rP[1,1]
-cat("Ritorno atteso del Mop:",Mop$pm,"[",round(100*Mop$pm,2),"% ]\n")
+Mop.ret <- Mop$pw[1]*(TEN.MI.p1/TEN.MI.p0-1) + Mop$pw[2]*(ENI.MI.p1/ENI.MI.p0-1) + Mop$pw[3]*(EXO.MI.p1/EXO.MI.p0-1) + Mop$pw[4]*(AZM.MI.p1/AZM.MI.p0-1) + Mop$pw[5]*(REC.MI.p1/REC.MI.p0-1) + Mop$pw[6]*(DIA.MI.p1/DIA.MI.p0-1) - trans_perc
+# Ritorno del portfolio utilizzando i pesi della portfolio optimization e i ritorni predetti con ARMA
+Mop.forecastRet <- Mop$pw[1]*TEN.MI.rP[1,1] + Mop$pw[2]*ENI.MI.rP[1,1] + Mop$pw[3]*EXO.MI.rP[1,1] + Mop$pw[4]*AZM.MI.rP[1,1] +Mop$pw[5]*REC.MI.rP[1,1] +Mop$pw[6]*DIA.MI.rP[1,1] - trans_perc
+# Ritorno atteso del Mop, parametro di ritorno di portfolio optim
+cat("Ritorno atteso del Mop:",Mop$pm-trans_perc,"[",round(100*Mop$pm-trans_perc,2),"% ]\n")
+# Ritorno del portfolio alla end date
 cat("Ritorno effettivo del Mop:",Mop.ret,"[",round(100*Mop.ret,2),"% ]")
+# Ritorno del portfolio utilizzando i pesi della portfolio optimization e i ritorni predetti con ARMA
 cat("Ritorno forecast con pesi del Mop:", Mop.forecastRet,"[",round(100*Mop.forecastRet,2),"% ]" )
 # Confronto grafico dei ritorni
-pairret <- cbind(round(100*Mop$pm,2),round(100*Mop.ret,2),round(100*Mop.forecastRet,2))
+pairret <- cbind(round(100*Mop$pm-trans_perc,2),round(100*Mop.ret,2),round(100*Mop.forecastRet,2))
 colnames(pairret) <- c("Ritorno Atteso", "Ritorno Effettivo", "Ritorno forecasted")
-barplot(pairret, main="Ritorni del portfolio (atteso, effettivo e forecast) a confronto", ylab = "Ritorno (%)")
+barplot(pairret, main="Ritorni del portfolio (atteso, effettivo e forecast) a confronto", ylab = "Ritorno (%)", ylim=c(-5,15))
+abline(h=0.0, lty=2, lwd=2, col="blue")
