@@ -668,6 +668,22 @@ AZM.MI_betas <- as.xts(c(rep(NA,delta_t), as.numeric(AZM.MI_betas.xts)), order.b
 REC.MI_betas <- as.xts(c(rep(NA,delta_t), as.numeric(REC.MI_betas.xts)), order.by = index(TEN.MI.CCReturnMonthly))
 DIA.MI_betas <- as.xts(c(rep(NA,delta_t), as.numeric(DIA.MI_betas.xts)), order.by = index(TEN.MI.CCReturnMonthly))
 
+# Ritorno atteso degli stocks utilizzando Beta
+tasso_risk <- 0.04
+RISKFREE.ret <- (tasso_risk+1)^(10/12)
+FTSEMIB.MI <- to.monthly(FTSEMIB.MI)
+
+FTSE.MI.ret <- as.numeric(FTSEMIB.MI$FTSEMIB.MI.Close[as.yearmon("ott 2020")])/as.numeric(FTSEMIB.MI$FTSEMIB.MI.Close[as.yearmon("gen 2020")])
+TEN.MI_betas.EXP_RET <- RISKFREE.ret+as.numeric(TEN.MI_betas[as.yearmon("gen 2020")])*(FTSE.MI.ret - RISKFREE.ret)
+ENI.MI_betas.EXP_RET <- RISKFREE.ret+as.numeric(ENI.MI_betas[as.yearmon("gen 2020")])*(FTSE.MI.ret - RISKFREE.ret)
+EXO.MI_betas.EXP_RET <- RISKFREE.ret+as.numeric(EXO.MI_betas[as.yearmon("gen 2020")])*(FTSE.MI.ret - RISKFREE.ret)
+AZM.MI_betas.EXP_RET <- RISKFREE.ret+as.numeric(AZM.MI_betas[as.yearmon("gen 2020")])*(FTSE.MI.ret - RISKFREE.ret)
+REC.MI_betas.EXP_RET <- RISKFREE.ret+as.numeric(REC.MI_betas[as.yearmon("gen 2020")])*(FTSE.MI.ret - RISKFREE.ret)
+DIA.MI_betas.EXP_RET <- RISKFREE.ret+as.numeric(DIA.MI_betas[as.yearmon("gen 2020")])*(FTSE.MI.ret - RISKFREE.ret)
+
+exp_rets <- cbind(TEN.MI_betas.EXP_RET, ENI.MI_betas.EXP_RET, EXO.MI_betas.EXP_RET, AZM.MI_betas.EXP_RET, REC.MI_betas.EXP_RET, DIA.MI_betas.EXP_RET)
+kable(exp_rets)
+
 par(mfrow=c(1,1))
 plot(TEN.MI_betas, type="l", main="Beta TEN.MI")
 plot(ENI.MI_betas, type="l", main="Beta ENI.MI")
